@@ -1,2 +1,2 @@
-# Movie_watchlist
+# Movie-watchlist
 Simple backend app with PostgreSQL database
