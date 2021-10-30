@@ -38,7 +38,7 @@ def print_movie_list(heading, movies):
 
 def prompt_watch_movie():
     username = input("Username: ")
-    movie_id = input("Mobie ID: ")
+    movie_id = input("Movie ID: ")
     database.watch_movie(username, movie_id)
 
 
@@ -61,6 +61,7 @@ database.create_tables()
 def prompt_show_watched_movies():
     username = input("Username: ")
     movies = database.get_watched_movies(username)
+    print(movies)
     if movies:
         print_movie_list(f"{username}'s watched movies ", movies)
     else:
