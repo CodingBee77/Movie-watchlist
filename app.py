@@ -77,6 +77,7 @@ while (user_input := input(menu)) != "8":
         movies = database.get_movies()
         print_movie_list("All", movies)
     elif user_input == "4":
+        #TODO: modify inserting movies to watched table to check if user exists - if not - add user to the users, then add movie to watched table
         prompt_watch_movie()
     elif user_input == "5":
         prompt_show_watched_movies()
